@@ -16,7 +16,7 @@ const Home = () => {
       <div className="hidden flex-1  sm:block mt-14 ml-10">
         <Sidebar jobs={jobs} />
       </div>
-      <header className="mt-14 flex-1 ml-10 text-center w-full flex flex-col justify-evenly items-start">
+      <header className="mt-14 flex-1 ml-10 text-center w-full flex flex-col justify-start items-start">
         <h1 className="text-purple-600 text-2xl border-2 border-purple-600 p-1 rounded-lg mb-4">
           Entry Summary
         </h1>
