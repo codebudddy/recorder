@@ -4,12 +4,12 @@ import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyB0tt40BnHSuiDi-5-ikM3-RmHSbiIRn8Y',
-  authDomain: 'recorder-6b6fd.firebaseapp.com',
-  projectId: 'recorder-6b6fd',
-  storageBucket: 'recorder-6b6fd.appspot.com',
-  messagingSenderId: '1019038837266',
-  appId: '1:1019038837266:web:1fd9b8fb97978eb12506cb',
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.PROJECTID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
