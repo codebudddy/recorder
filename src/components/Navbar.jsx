@@ -24,7 +24,9 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center p-2 ">
-      <div className="text-purple-600 font-bold text-2xl ">Recorder</div>
+      <div className="text-purple-600 font-bold text-2xl ">
+        <Link to="/">Recorder</Link>
+      </div>
       <div>
         {user && (
           <p className="text-purple-900 font-bold">

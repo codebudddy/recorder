@@ -3,7 +3,7 @@ import Entry from './Entry';
 
 const Sidebar = ({ jobs }) => {
   return (
-    <div className="overflow-y-scroll scrollbar-hide h-[90vh]">
+    <div className="overflow-y-scroll scrollbar-hide h-[80vh]">
       <h3 className="text-2xl text-purple-700 ml-6"> Entries</h3>
 
       {jobs?.map((job) => (

@@ -18,7 +18,7 @@ const Footer = () => {
   }, [document]);
 
   return (
-    <div className="absolute bottom-0 z-10 bg-slate-100 w-full overflow-x-scroll flex justify-start items-center flex-wrap">
+    <div className="absolute bottom-0 z-10 bg-slate-100 w-full flex justify-start items-center flex-wrap">
       <h3 className="m-4 text-center font-bold text-xl">
         <Link
           to={`/status/collected`}
@@ -36,7 +36,9 @@ const Footer = () => {
           className="text-green-600 border-2 border-green-600 rounded-lg p-2 "
         >
           Paid:{' '}
-          <span className=" text-green-600 rounded-full">{paid?.length}</span>
+          <span className=" text-green-600 rounded-full">
+            {paid?.length * 4000}
+          </span>
         </Link>
       </h3>
       <h3 className="m-4 text-center font-bold text-xl">

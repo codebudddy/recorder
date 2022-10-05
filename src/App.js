@@ -20,7 +20,7 @@ function App() {
           <div className="App w-[100vw h-[100vh] bg-purple-200 flex flex-col">
             <Navbar user={userDetails} />
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={userDetails ? <Home /> : <SingIn />} />
               <Route path="/status/:status" element={<StatusDetails />} />
               <Route path="/jobs/:id" element={<JobDetails />} />
               <Route path="/login" element={<Login />} />
